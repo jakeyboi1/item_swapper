@@ -33,7 +33,8 @@ Config.items = {
         reward2 = "coal", amount2 = 3,
         reward3 = "meat", amount3 = 2,
         reward4 = "wheat", amount4 = 2,
-        reward5 = "water", amount5 = 1
+        reward5 = "water", amount5 = 1,
+        totalrewarditems = 5
     },
 
     ]]
