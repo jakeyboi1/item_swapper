@@ -36,7 +36,7 @@ Config.items = {
 }
 
 --End registering items
-
+--Begin of crafting section this is not required to be used if you do not want it then ignore below this point
 Config.recipes = {
     --The text moneybagfv is the item it gives you make sure its registered in the database.
     moneybagfv = {
