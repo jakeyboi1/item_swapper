@@ -11,6 +11,7 @@ This is a item swapper/converter script with a couple neat features.
 easy to install just put this in your resource folder and add ensure item_swapper to your resource.cfg
 
 -- The swapper/converter part of the script
+All editible in the config.lua
 This script removes an item from your inventory when you double click (use it) and adds new items to your inventory.
 It currently can give you a max of 5 different items(the amount of each individual item has no limit) per item it removes.
 To add new items, in the config.lua use the Config.items how to add new items is commented out in the code with examples.
