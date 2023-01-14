@@ -1,3 +1,7 @@
+--Do not touch anything in here if you do not know what you are doing. At the very least make a back up before you do.
+
+
+
 -- Pulls and allows the use of VORP Inventory
 
 local VorpInv = {}
@@ -18,19 +22,44 @@ end)
 
 
 
---Creates a thread that pulls items amounts and rewards from config, and gives them or removes them from you.
+--this is the swapper/converterpart of the code
 
 Citizen.CreateThread(function() -- Registers the thread
   for itemName, value in pairs(Config.items) do --value pulls the item from config and sets itemName to it. pairs(Config.items) is registering the table
     VorpInv.RegisterUsableItem(itemName, function(data) --Registers the item usable
       print(data.source) -- player using the item
       print(data.label) -- item label
-      VorpInv.subItem(data.source, itemName, value.removeitem) --Removes one of the items
-      VorpInv.addItem(data.source, value.reward, value.amount) --adds the item from reward in config and gives the amount from config.
-      VorpInv.addItem(data.source, value.reward2, value.amount2) --Pulls reward2 from config and so on
-      VorpInv.addItem(data.source, value.reward3, value.amount3)
-      VorpInv.addItem(data.source, value.reward4, value.amount4)
-      VorpInv.addItem(data.source, value.reward5, value.amount5)
+      local total = value.totalrewarditems --Pulls the rewards from each table
+      if total == 1 then
+        VorpInv.addItem(data.source, value.reward, value.amount)
+        VorpInv.subItem(data.source, itemName, value.removeitem)
+      end
+      if total == 2 then
+        VorpInv.addItem(data.source, value.reward, value.amount)
+        VorpInv.addItem(data.source, value.reward2, value.amount2)
+        VorpInv.subItem(data.source, itemName, value.removeitem)
+      end
+      if total == 3 then
+        VorpInv.addItem(data.source, value.reward, value.amount)
+        VorpInv.addItem(data.source, value.reward2, value.amount2)
+        VorpInv.addItem(data.source, value.reward3, value.amount3)
+        VorpInv.subItem(data.source, itemName, value.removeitem)
+      end
+      if total == 4 then
+        VorpInv.addItem(data.source, value.reward, value.amount)
+        VorpInv.addItem(data.source, value.reward2, value.amount2)
+        VorpInv.addItem(data.source, value.reward3, value.amount3)
+        VorpInv.subItem(data.source, itemName, value.removeitem)
+        VorpInv.addItem(data.source, value.reward4, value.amount4)
+      end
+      if total == 5 then
+        VorpInv.addItem(data.source, value.reward, value.amount)
+        VorpInv.addItem(data.source, value.reward2, value.amount2)
+        VorpInv.addItem(data.source, value.reward3, value.amount3)
+        VorpInv.subItem(data.source, itemName, value.removeitem)
+        VorpInv.addItem(data.source, value.reward4, value.amount4)
+        VorpInv.addItem(data.source, value.reward5, value.amount5)
+      end
     end)
   end
 end)
@@ -39,7 +68,7 @@ end)
 
 
 
---This handles the crafting part of the code
+--Everything below this point handles the crafting part of the code
 --this code uses a lot of layered if to do item checks etc
 --if one thing fails a if check it ends the code there not continueing.
 

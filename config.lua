@@ -6,11 +6,14 @@ Config.items = {
     --the text moneybagfv is the item it removes make sure its registered in your database.
     moneybagfv = {
         removeitem = 1, --Specifies how many of the item to take away from you
-        reward = "bonds", amount = 3 -- Registers the item to give when the item is used, and also specifies the amount.
+        reward = "bonds", amount = 3, -- Registers the item to give when the item is used, and also specifies the amount.
+        totalrewarditems = 1 --If you are only doing 1 reward item then set to 1 if you are doing 2 then set it too 2 etc
     },
     moneybagth = {
         removeitem = 1,
-        reward = "bonds", amount = 7
+        reward = "bonds", amount = 7,
+        reward2 = "water", amount2 = 1,
+        totalrewarditems = 2 --If you are only doing 1 reward item then set to 1 if you are doing 2 then set it too 2 etc
     },
     moneybagone = {
         removeitem = 1,
@@ -18,7 +21,8 @@ Config.items = {
         reward2 = "coal", amount2 = 3,
         reward3 = "meat", amount3 = 2,
         reward4 = "wheat", amount4 = 2,
-        reward5 = "water", amount5 = 1
+        reward5 = "water", amount5 = 1,
+        totalrewarditems = 5 --If you are only doing 1 reward item then set to 1 if you are doing 2 then set it too 2 etc
     },
     --[[EXAMPLE TO ADD NEW ITEM
      
@@ -36,7 +40,7 @@ Config.items = {
 }
 
 --End registering items
---Begin of crafting section this is not required to be used if you do not want it then ignore below this point
+
 Config.recipes = {
     --The text moneybagfv is the item it gives you make sure its registered in the database.
     moneybagfv = {
