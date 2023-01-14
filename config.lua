@@ -34,7 +34,7 @@ Config.items = {
         reward3 = "meat", amount3 = 2,
         reward4 = "wheat", amount4 = 2,
         reward5 = "water", amount5 = 1,
-        totalrewarditems = 5
+        totalrewarditems = 5 --If you are only doing 1 reward item then set to 1 if you are doing 2 then set it too 2 etc
     },
 
     ]]
