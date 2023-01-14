@@ -23,3 +23,6 @@ This part of the code acts as a crafting/combining system using recipe items.
 It uses recipe itemss (just any item you want to use) it does not remove the recipe item itself.
 It will remove the items you set it too and the amount you set it too and add the item you set and the amount you set.
 It currently supports using a max of 5 items to craft an item you can use less items than 5 though just make sure you specify it at the totalrequired 
+
+
+Also special thanks to Outisder for teaching me how to setup a config.lua to be used in the script.
