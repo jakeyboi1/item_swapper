@@ -1,7 +1,5 @@
-Item Swapper script written by Jake2k4
-
-REQUIRED SCRIPTS FOR THIS ONE TO FUNCTION:
-VORP Inventory
+REQUIRMENTS:
+https://github.com/VORPCORE/vorp_inventory-lua
 
 
 
