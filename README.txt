@@ -3,6 +3,9 @@ Item Swapper/Converter and Item Crafter/Combiner
 REQUIRED SCRIPTS FOR THIS ONE TO FUNCTION:
 https://github.com/VORPCORE/vorp_inventory-lua
 
+Easy to install aswell once you have downloaded the zip file. Extract the files in it to your resources folder. Rename the file from item_swapper-main to item_swapper and in your resource.cfg add ensure item_swapper
+
+
 
 The Item Swapper/Converter part of the script:
 The script removes an item from your inventory when it is used(double clicked) and adds items in its place.
