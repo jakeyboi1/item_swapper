@@ -30,3 +30,4 @@ The webhooking system logs down everything you set it too log, and displays the 
 
 Special thanks to Outsider for teaching me how to setup a config.lua to be used in the script, aswell as for helping me get the webhook to work.
 Special thanks aswell to the entire community for all your guy's help.
+I will offer as much support as I can so if there is an issue or idea get in contact with me.
