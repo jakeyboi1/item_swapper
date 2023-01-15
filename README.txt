@@ -1,4 +1,4 @@
-Item Swapper/Converter and Item Crafter/Combiner written by Jake2k4
+Item Swapper/Converter and Item Crafter/Combiner
 
 REQUIRED SCRIPTS FOR THIS ONE TO FUNCTION:
 https://github.com/VORPCORE/vorp_inventory-lua
