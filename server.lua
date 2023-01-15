@@ -105,11 +105,11 @@ Citizen.CreateThread(function()
     VorpInv.RegisterUsableItem(value.recipeitem, function(data) --registers the item usable
       print(data.source)
       print(data.label)
-      local itemCount = VorpInv.getItemCount(data.source, value.removeitem2) --Checks to see if you have enough items
-      local itemCount2 = VorpInv.getItemCount(data.source, value.removeitem3) --Checks to see if you have enough items
-      local itemCount3 = VorpInv.getItemCount(data.source, value.removeitem4) --Checks to see if you have enough items
-      local itemCount4 = VorpInv.getItemCount(data.source, value.removeitem5) --Checks to see if you have enough items
-      local itemCount5 = VorpInv.getItemCount(data.source, value.removeitem6) --Checks to see if you have enough items
+      local itemCount = VorpInv.getItemCount(data.source, value.removeitem2) --Sets a varible to  the amount of items you have
+      local itemCount2 = VorpInv.getItemCount(data.source, value.removeitem3) --Sets a varible to  the amount of items you have
+      local itemCount3 = VorpInv.getItemCount(data.source, value.removeitem4) --Sets a varible to  the amount of items you have
+      local itemCount4 = VorpInv.getItemCount(data.source, value.removeitem5) --Sets a varible to  the amount of items you have
+      local itemCount5 = VorpInv.getItemCount(data.source, value.removeitem6) --Sets a varible to the amount of items you have
       local total = value.totalrequired --sets  the local varible total to the integer in the table in config.lua
       if total == 1 then --This is saying if total is equal to 1 then continue.
         if itemCount >= value.amount6 then --Is checking to see if the amount of items you have it greater than or equal to the required amount in the config, and if it is then continue.
