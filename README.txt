@@ -29,7 +29,7 @@ It also will display text (that you specify) in the top left when an item is Cra
 
 --Side Notes
 
-The webhooking system logs down everything you set it too log, and displays the persons steam id which is great becouse if they find a exploit you will see it in your webhook, and since you have thier steam id you will be able to find the player in your database and admin menu.
+The webhooking system logs down everything you set it too log, and displays the persons steam id which is great because if they find a exploit you will see it in your webhook, and since you have thier steam id you will be able to find the player in your database and admin menu.
 
 Special thanks to Outsider for teaching me how to setup a config.lua to be used in the script, aswell as for helping me get the webhook to work.
 Special thanks aswell to the entire community for all your guy's help.
