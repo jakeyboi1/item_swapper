@@ -24,10 +24,12 @@ Config.crafting = { --Start of crafting/combiner config. If you do not want this
     {
         TakenItems = { --these are the items the script will remove
             {
+                displayname = 'Water',
                 name = "water", --name of item in database
                 count = 2 --amount to remove
             },
             {
+                displayname = 'Bonds',
                 name = "bonds", --name of item in database
                 count = 1 --amount to remove
             },
@@ -44,6 +46,7 @@ Config.crafting = { --Start of crafting/combiner config. If you do not want this
     {
         TakenItems = {
             {
+                displayname = 'Water',
                 name = 'water',
                 count = 1,
             },

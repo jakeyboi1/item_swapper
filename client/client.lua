@@ -22,7 +22,7 @@ Citizen.CreateThread(function()
             end
         elseif WarMenu.IsMenuOpened('hd_itemswapper:itemsneededtomake') then -- if the menu is opened then
             for k, v in pairs(Selectedtable.TakenItems) do --opens table and creates loop
-                if WarMenu.Button(Config.Language.Itemshow .. ' ' .. v.count .. ' '.. v.name, '', '') then --creates the button(No code will be run if selected'Just used to show the items needed)
+                if WarMenu.Button(Config.Language.Itemshow .. ' ' .. v.count .. ' '.. v.displayname, '', '') then --creates the button(No code will be run if selected'Just used to show the items needed)
                 end
             end
             if WarMenu.Button(Config.Language.Craftitembutton) then --Creates the craft item button if it is selected then
