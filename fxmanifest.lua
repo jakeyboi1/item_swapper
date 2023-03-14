@@ -10,3 +10,9 @@ server_scripts {
 shared_scripts {
     'config.lua',
 }
+
+
+client_scripts {
+    '/client/client.lua',
+    '/client/warmenu.lua',
+}
