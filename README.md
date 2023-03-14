@@ -1,32 +1,33 @@
-# hd_bookie
+# hd_itemswapper
 
->This is a simple easily configurable bookie(bet on fights) script for RedM!
+>This is a simple easily configurable Converter/Combiner script for RedM!
 
 ## Features
-- Spawns 4 bookie npc's around the map with blips at configurable locations!
-- When you place a bet it spawns 2 npc's that will fight each other, if the one you bet on wins you win the fight and get the bet money.
-- If the one you bet on loses you lose your bet money!
-- Fights are on a global cooldown set in the config so you cant abuse it by sitting there. (Make sure there is atleast a 60000 ms cooldown otherwise it will lead to bugs)
+- When the player uses an item set in the converter part of the config it removes that item, and adds new items you set!
+- Creates a crafting/combining system using Warmenu!
+- Crafting system can remove as many items as you want, and in return give you new items you set!
+- Easy to translate via Config.Languages in the config.lua file!
+- Uses vorp_inputs to allow you to craft mulitple items at once!
 
 ## How it works
-- Go to one of the bookies hit g when close and bet on a fighter!
+- For the converter just double click(use) the set item in your inventory. It will then remove that item and add the new ones!
+- For the crafting/combining system just type the command in. The default is 'hd_combiner' you can change it in the config.lua file!
 
 ## Why use it
-- Betting on fights is a fun past time.
-- Adds more to do in your server.
-- Entertaining fights.
-- Simple and effective script.
+- Creates the ability to make things like boxes(for example a lunchbox that when used gives you food!) in your RedM server!
+- Creates a built in crafting/combining system for all the set items in your config! So your players can do things like create a boxes etc!
+- Easy to configure to your needs! Translation is made easy in the config.lua aswell!
 
 ## Requirements
 - VORP Core
+- VORP Inventory
 - VORP inputs
 
 ## Installation Steps
 - Add the file to your resource file
-- Add ensure 'hd_bookie' to your resources.cfg
+- Add ensure 'hd_itemswapper' to your resources.cfg
 
 ## Side notes
-- You can add more locations to this if you edit the code, but you can not add or remove locations from config without actually editing the code if you do it will break the script.
 - I will offer support for this, however do note it is not garunteed
 - I really hope you enjoy the script thanks for trying it!
 - I have optimized this code quite alot, but if you see any code that can be optimized further please open a pull request and I will take a look if it works I will merge it. Or just tell me lol.
